@@ -1,4 +1,32 @@
 ---
 label: Artworks
 hide_body: false
-fields: []
+fields:
+- name: artwork_title
+  type: text
+  config:
+    required: false
+  label: Artwork Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+- name: update_date
+  type: datetime
+  label: Update date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image / File
