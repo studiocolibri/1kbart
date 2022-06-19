@@ -8,3 +8,6 @@ svg_code = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 457 690.4\">
 update_date = 2022-06-18T22:00:00Z
 
 +++
+
+{{< directoryindex path="static/uploads/" pathURL="/uploads" >}}
+

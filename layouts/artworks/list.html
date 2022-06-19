@@ -14,7 +14,8 @@
 	{{ partial "nav.html" . }}
     {{ range .Pages }}
         <li>
-            {{.Params.Svg_code | safeHTML}}<br>
+            <img src="{{.Params.Image}}"/>
+            <br>
             <i>{{.Params.Artwork_title}}</i>
             <a href="{{.Permalink}}"> <br> {{.Params.Artist_name}}</a>
         </li>
