@@ -7,6 +7,11 @@
     <style>
         svg {
             max-width: 500px;
+            margin-bottom: 40px;
+        }
+        li {
+            list-style-type: none;
+            margin-top: 100px;
         }
     </style>
 </head>
@@ -18,8 +23,10 @@
 	{{ partial "nav.html" . }}
     {{ range .Pages }}
         <li>
-            <a href="{{.Permalink}}">{{.Params.Artwork_title}} | {{.Params.Artist_name}}</a>
+            {{.Params.Svg_code | safeHTML}}<br>
+            <i>{{.Params.Artwork_title}}</i>
+            <a href="{{.Permalink}}"> <br> {{.Params.Artist_name}}</a>
         </li>
-        {{end}}
+    {{end}}
 </body>
 </html>
