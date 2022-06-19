@@ -44,5 +44,10 @@ fields:
   config:
     required: false
   label: Artist LInk
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image / File
 pages:
 - content/artworks/papote.md
