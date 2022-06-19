@@ -4,7 +4,7 @@ artist_name = "@anthobarbarich"
 artwork_title = "Ray attempt #1 (blue)"
 description = "Blablablabla"
 image = "/uploads/hero_comp.svg"
-svg_code = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 403.3 516.9\">\n  <defs>\n    <style>\n      .cls-1{fill:#009ee2}.cls-2{fill:#119239}.cls-3{fill:#fbdd59}.cls-4{fill:#da1817}\n    </style>\n  </defs>\n  <path class=\"cls-1\" d=\"M270 449a67 67 0 0 1-66-66h-69a134 134 0 1 0 268 0h-66a67 67 0 0 1-67 66Z\"/>\n  <path class=\"cls-2\" d=\"M285 232v72h-32v-72zm-95 20 46 55-24 20-46-55zm112 55 46-55 24 21-46 54z\"/>\n  <circle class=\"cls-3\" cx=\"80.7\" cy=\"169.8\" r=\"80.7\"/>\n  <path class=\"cls-4\" d=\"M67 380a67 67 0 0 1-67 67v69a134 134 0 0 0 134-135A134 134 0 0 0 0 247v66a67 67 0 0 1 67 67Z\"/>\n  <circle cx=\"268.9\" cy=\"377.9\" r=\"53.1\" style=\"fill:#1d1d1b\"/>\n  <path class=\"cls-2\" d=\"M0 81a81 81 0 0 1 161 0\"/>\n  <path class=\"cls-3\" d=\"M265 0a139 139 0 0 0 138 134V0Z\"/>\n  <path class=\"cls-1\" d=\"M391 228A139 139 0 0 0 253 94v134Z\"/>\n  <path class=\"cls-4\" d=\"M239 0v134h-59V0z\"/>\n  <circle cx=\"210.2\" cy=\"177.7\" r=\"31.7\" style=\"fill:#eb639c\"/>\n</svg>"
+svg_code = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1999.9 1994.8\">\n  <g data-name=\"Calque 2\">\n    <g data-name=\"Calque 1\">\n      <path d=\"M1550 1993v-421h-294v421m743-1278v1h1Zm1 427h-1v1Zm-1 426v2h1Z\"/>\n      <path d=\"M1999 1995v-425h-295v-428h295V716h-298V431h-298v286h98v427h-495v851M647 284h446V0H0v284h349v429h146v427H349v421h298v-425h146V709H647ZM0 1991h197v-427H0Z\"/>\n      <path d=\"M0 1138h197V711H0Z\"/>\n    </g>\n  </g>\n</svg>"
 update_date = 2022-06-18T22:00:00Z
 
 +++
