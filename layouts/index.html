@@ -14,7 +14,7 @@
 	<p>{{.Params.Intro}}</p>
 	{{ partial "nav.html" . }}
 	{{ range (where .Site.RegularPages "Section" "artworks") }}     <li>
-		<a href="{{.Permalink}}"><img src="{{.Params.Image}}"/></a>
+		<a href="{{.Permalink}}"><img src="{{.Params.Image}}" loading="lazy"/></a>
 		<br>
 		<i>{{.Params.Artwork_title}}</i>
 		<a href="{{.Permalink}}"> <br> {{.Params.Artist_name}}</a><br>
