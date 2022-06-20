@@ -50,4 +50,5 @@ fields:
     maxSize: 64
   label: Image / File
 pages:
+- content/artworks/fibonacci.md
 - content/artworks/papote.md
