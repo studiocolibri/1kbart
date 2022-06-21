@@ -1,0 +1,18 @@
+{{ define "main"}}
+<main>
+    <header>
+        <h1>{{ $.Site.Title }}</h1>
+        {{ partial "nav.html" }}
+    </header>
+    {{ range (where .Site.RegularPages "Section" "artworks") }} <li>
+        <a href="{{.Permalink}}"><img src="{{.Params.Image}}" loading="lazy" /></a>
+        <br>
+        <i>{{.Params.Artwork_title}}</i>
+        <a href="{{.Params.Artist_link}}" target="_blank"><br>
+            {{.Params.Artist_name}}</a><br>
+        filesize: 789bytes<br>
+        format: svg
+    </li>
+    {{end}}
+</main>
+{{end}}

@@ -1,31 +1,13 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ $.Site.Title }}</title>
-{{ partial "style.html"}}
-</head>
-<body>
-	<h1>{{ $.Site.Title }}</h1>
-	{{ partial "nav.html" }}
-	<p>{{ $.Site.Params.Description | safeHTML}}</p>
-
-	<p>{{.Params.Intro}}</p>
-	{{ range (where .Site.RegularPages "Section" "artworks") }}     <li>
-		<a href="{{.Permalink}}"><img src="{{.Params.Image}}" loading="lazy"/></a>
+{{define "main"}}   
+	{{ range (where .Site.RegularPages "Section" "artworks") }}
+	<li>
+		<a href="{{.Permalink}}"><img src="{{.Params.Image}}" loading="lazy" /></a>
 		<br>
 		<i>{{.Params.Artwork_title}}</i>
 		<a href="{{.Params.Artist_link}}" target="_blank"><br>
 			{{.Params.Artist_name}}</a><br>
 		filesize: 789bytes<br>
 		format: svg
-		</li>
 	</li>
+	{{end}}
 {{end}}
-<!-- {{ range (.Paginate ( first 50 .Pages.ByTitle )).Pages }} 
-test
-{{end}} -->
-{{ partial "footer.html" . }}
-</body>
-</html>
