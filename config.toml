@@ -2,4 +2,4 @@ baseURL = "/"
 languageCode = "en-us"
 title = "1kb.art"
 [params]
-    description = "promoting a sustainable, eco-friendly online landscape through ultra-lightweight artworks"
+    description = "promoting a sustainable, eco-friendly online landscape through artworks < 1kb "
