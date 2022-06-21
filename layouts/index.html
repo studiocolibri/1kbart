@@ -5,11 +5,10 @@
 <meta name="viewport" content="width=device-width">
 <title>{{ $.Site.Title }}</title>
 {{ partial "style.html"}}
-
 </head>
 <body>
 	<h1>{{ $.Site.Title }}</h1>
-	{{ partial "nav.html" . }}
+	{{ partial "nav.html" }}
 	<p>{{ $.Site.Params.Description | safeHTML}}</p>
 
 	<p>{{.Params.Intro}}</p>
@@ -27,6 +26,6 @@
 <!-- {{ range (.Paginate ( first 50 .Pages.ByTitle )).Pages }} 
 test
 {{end}} -->
-</body>
+{{ partial "footer.html" . }}
 </body>
 </html>
