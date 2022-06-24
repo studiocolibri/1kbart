@@ -50,6 +50,7 @@ fields:
     maxSize: 64
   label: Image / File
 pages:
+- content/artworks/escape.md
 - content/artworks/fibonacci.md
 - content/artworks/garages-numeriques.md
 - content/artworks/papote.md
