@@ -51,4 +51,5 @@ fields:
   label: Image / File
 pages:
 - content/artworks/fibonacci.md
+- content/artworks/garages-numeriques.md
 - content/artworks/papote.md
