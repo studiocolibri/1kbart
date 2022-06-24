@@ -1,5 +1,7 @@
-{{define "main"}}   
-	{{ range (where .Site.RegularPages "Section" "artworks") }}
+{{define "main"}}
+	{{ $range := (where .Site.RegularPages "Section" "artworks")  }}
+	{{ $paginator := .Paginate $range }}
+	{{ range $paginator.Pages }}	
 	<li>
 		<a href="{{.Permalink}}"><img src="{{.Params.Image}}" loading="lazy" /></a>
 		<br>
@@ -10,4 +12,7 @@
 		format: svg
 	</li>
 	{{end}}
+	{{ if and (gt $paginator.TotalPages 1) ($paginator.HasNext) }}
+	<a class="nextpage" href="{{ $paginator.Next.URL }}">Next Page</a>
+	{{ end }}
 {{end}}
