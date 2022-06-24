@@ -3,7 +3,10 @@
 	{{ $paginator := .Paginate $range }}
 	{{ range $paginator.Pages }}	
 	<li>
-		<a href="{{.Permalink}}"><img src="{{.Params.Image}}" loading="lazy" /></a>
+		<a href="{{.Permalink}}">
+			<img src="{{.Params.Image}}" loading="lazy" />
+			<!--{{ readFile (print "static/" ( .Params.Image)) | safeHTML }}-->
+		</a>
 		<br>
 		<i>{{.Params.Artwork_title}}</i>
 		<a href="{{.Params.Artist_link}}" target="_blank"><br>
