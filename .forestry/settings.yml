@@ -5,15 +5,15 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/contributors
+  label: Contributors
+  create: all
+  match: "*"
+- type: directory
   path: content
   label: Pages
   create: all
   match: "*"
-- type: directory
-  path: contributors
-  label: Contributors
-  create: all
-  match: "**/*"
 - type: directory
   path: content/artworks
   label: Artworks
