@@ -9,6 +9,8 @@ sections:
   label: Contributors
   create: all
   match: "*"
+  templates:
+  - contributors
 - type: directory
   path: content
   label: Pages
