@@ -1,6 +1,8 @@
 +++
-+++
 
-_"We were told that the Internet would 'dematerialise' society and decrease energy use. Contrary to this projection, it has become a large and rapidly growing consumer of energy itself"_
++++
+> _"We were told that the Internet would 'dematerialise' society and decrease energy use. Contrary to this projection, it has become a large and rapidly growing consumer of energy itself"_
 
 – Low Tech Magazine
+
+In the last couple of years, the average size of website pages has been growing drastically, mainly caused by the use of heavy ressources & media. Not only having an impact on energy use and carbon emissions but also on User Experience.
