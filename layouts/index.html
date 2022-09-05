@@ -3,15 +3,13 @@
 	{{ $paginator := .Paginate $range }}
 	{{ range $paginator.Pages }}	
 	<li>
-		<a href="{{.Permalink}}">
 			<img src="{{.Params.Image}}" loading="lazy" />
 			<!--{{ readFile (print "static/" ( .Params.Image)) | safeHTML }}-->
-		</a>
 		<br>
 		<i>{{.Params.Artwork_title}}</i>
 		<a href="{{.Params.Artist_link}}" target="_blank"><br>
 			{{.Params.Artist_name}}</a><br>
-		filesize: 789bytes<br>
+			filesize: {{.Params.Filesize}}kb<br>
 		format: svg
 	</li>
 	{{end}}
