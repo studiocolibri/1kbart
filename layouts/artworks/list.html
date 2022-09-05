@@ -1,7 +1,7 @@
 {{define "main"}}   
 	{{ range (where .Site.RegularPages "Section" "artworks") }}
 	<li>
-		<a href="{{.Permalink}}"><img src="{{.Params.Image}}" loading="lazy" /></a>
+		<img src="{{.Params.Image}}" loading="lazy" />
 		<br>
 		<i>{{.Params.Artwork_title}}</i>
 		<a href="{{.Params.Artist_link}}" target="_blank"><br>
