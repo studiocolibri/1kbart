@@ -1,4 +1,5 @@
 {{define "main"}}
+<ul>
 	{{ $range := (where .Site.RegularPages "Section" "artworks")  }}
 	{{ $paginator := .Paginate $range }}
 	{{ range $paginator.Pages }}	
@@ -16,4 +17,5 @@
 	{{ if and (gt $paginator.TotalPages 1) ($paginator.HasNext) }}
 	<a class="nextpage" href="{{ $paginator.Next.URL }}">Next Page</a>
 	{{ end }}
+</ul>
 {{end}}
