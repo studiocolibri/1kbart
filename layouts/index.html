@@ -5,7 +5,7 @@
 		{{ $paginator := .Paginate $range }}
 		{{ range $paginator.Pages }}	
 		<li>
-				<img src="{{.Params.Image}}" alt="{{.Params.Artwork_title}} by {{.Params.Artist_name}}" width="600" />
+				<img src="{{.Params.Image}}" alt="{{.Params.Artwork_title}} by {{.Params.Artist_name}}" width="600" height="auto"/>
 				<!--{{ readFile (print "static/" ( .Params.Image)) | safeHTML }}-->
 			<br>
 			<i>{{.Params.Artwork_title}}</i>
