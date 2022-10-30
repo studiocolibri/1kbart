@@ -1,4 +1,5 @@
 {{define "main"}}
+<p>{{ .Params.Description | safeHTML}}</p>
 	<ul>
 		{{ $range := (where .Site.RegularPages "Section" "artworks")  }}
 		{{ $paginator := .Paginate $range }}
