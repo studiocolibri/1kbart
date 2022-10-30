@@ -21,13 +21,15 @@
 	<a href="/" style="text-decoration: none;"><h1>{{ $.Site.Title }}</h1></a>
 	{{ partial "nav.html" }}
 	{{ if .IsHome }}
-	<p>{{ $.Site.Params.Description | safeHTML}}</p>
+	<p>{{ .Params.Description | safeHTML}}</p>
 {{ end }}    
 	<p>{{.Params.Intro}}</p>
 	{{end}}
+  <main>
     {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->
     {{ end }}
+  </main>
 	{{ block "footer" .}}
 {{partial "footer.html"}}	
 {{end}}

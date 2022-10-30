@@ -1,21 +1,21 @@
 {{define "main"}}
-<ul>
-	{{ $range := (where .Site.RegularPages "Section" "artworks")  }}
-	{{ $paginator := .Paginate $range }}
-	{{ range $paginator.Pages }}	
-	<li>
-			<img src="{{.Params.Image}}" loading="lazy" />
-			<!--{{ readFile (print "static/" ( .Params.Image)) | safeHTML }}-->
-		<br>
-		<i>{{.Params.Artwork_title}}</i>
-		<a href="{{.Params.Artist_link}}" target="_blank"><br>
-			{{.Params.Artist_name}}</a><br>
-			filesize: {{.Params.Filesize}}kb<br>
-		format: svg
-	</li>
-	{{end}}
-	{{ if and (gt $paginator.TotalPages 1) ($paginator.HasNext) }}
-	<a class="nextpage" href="{{ $paginator.Next.URL }}">Next Page</a>
-	{{ end }}
-</ul>
+	<ul>
+		{{ $range := (where .Site.RegularPages "Section" "artworks")  }}
+		{{ $paginator := .Paginate $range }}
+		{{ range $paginator.Pages }}	
+		<li>
+				<img src="{{.Params.Image}}" alt="{{.Params.Artwork_title}} by {{.Params.Artist_name}}" width="600" />
+				<!--{{ readFile (print "static/" ( .Params.Image)) | safeHTML }}-->
+			<br>
+			<i>{{.Params.Artwork_title}}</i>
+			<a href="{{.Params.Artist_link}}" target="_blank"><br>
+				{{.Params.Artist_name}}</a><br>
+				filesize: {{.Params.Filesize}}kb<br>
+			format: svg
+		</li>
+		{{end}}
+		{{ if and (gt $paginator.TotalPages 1) ($paginator.HasNext) }}
+		<a class="nextpage" href="{{ $paginator.Next.URL }}">Next Page</a>
+		{{ end }}
+	</ul>
 {{end}}
