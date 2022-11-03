@@ -1,7 +1,7 @@
 +++
 artist_link = "https://www.instagram.com/anthobarbarich/"
 artist_name = "@anthobarbarich"
-artwork_title = "Ray attempt #1 (blue)"
+artwork_title = "Ray attempt (blue)"
 description = "Blablablabla"
 filesize = 0.816
 image = "/uploads/blue2.svg"
