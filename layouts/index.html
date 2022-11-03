@@ -3,7 +3,7 @@
 	<ul>
 		{{ $range := (where .Site.RegularPages "Section" "artworks")  }}
 		{{ $paginator := .Paginate $range }}
-		{{ range $paginator.Pages }}	
+		{{ range ($paginator.Pages.ByParam "order")  }}	
 		<li>
 				<img src="{{.Params.Image}}" alt="{{.Params.Artwork_title}} by {{.Params.Artist_name}}" width="600" height="600"/>
 				<!--{{ readFile (print "static/" ( .Params.Image)) | safeHTML }}-->
