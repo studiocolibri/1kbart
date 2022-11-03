@@ -59,6 +59,16 @@ fields:
     min: 
     max: 
     step: 
+- name: order
+  type: number
+  label: Order
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 pages:
 - content/artworks/analog-bubblebath0001.md
 - content/artworks/escape.md
