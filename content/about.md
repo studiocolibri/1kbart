@@ -9,4 +9,4 @@ In the last couple of years, the average size of website pages has been growing 
 
 Does modern digital art have to be necessarily heavy & energy-intensive? The idea behind this website is to challenge designers to create the most lightweight artworks possible, pushing the boundaries of format limitations, technology uses & minimalism.
 
-Wanna send some stuff? Feel free to contact us [here](mailto:hi@1kb.art). All file formats are accepted as long as they are less than 1kb ✌️
+Wanna send some stuff? Feel free to contact "us" [here](mailto:hi@1kb.art). All file formats are accepted as long as they are less than 1kb ✌️
