@@ -60,6 +60,7 @@ fields:
     max: 
     step: 
 pages:
+- content/artworks/analog-bubblebath0001.md
 - content/artworks/escape.md
 - content/artworks/fibonacci.md
 - content/artworks/garages-numeriques.md
