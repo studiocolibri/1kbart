@@ -2,4 +2,5 @@
 name = "@anthobarbarich"
 +++
 
-Coucou
+**Coucou** Ca va ? lol![MirrorMindsSmall.jpeg]({{site.baseurl}}/content/contributors/MirrorMindsSmall.jpeg)
+
